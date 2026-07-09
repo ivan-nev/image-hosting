@@ -1,0 +1,246 @@
+[2026-07-09 20:01:26,267] INFO: База данных и таблица images созданы / проверены
+[2026-07-09 20:01:27,122] INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.10:8000
+[2026-07-09 20:01:27,122] INFO: [33mPress CTRL+C to quit[0m
+[2026-07-09 20:01:49,790] INFO: 127.0.0.1 - - [09/Jul/2026 20:01:49] "GET / HTTP/1.1" 200 -
+[2026-07-09 20:01:49,879] INFO: 127.0.0.1 - - [09/Jul/2026 20:01:49] "GET /image-uploader/css/style.css HTTP/1.1" 200 -
+[2026-07-09 20:01:49,880] INFO: 127.0.0.1 - - [09/Jul/2026 20:01:49] "GET /image-uploader/css/reset.css HTTP/1.1" 200 -
+[2026-07-09 20:01:49,880] INFO: 127.0.0.1 - - [09/Jul/2026 20:01:49] "GET /image-uploader/img/Nord.png HTTP/1.1" 200 -
+[2026-07-09 20:01:49,881] INFO: 127.0.0.1 - - [09/Jul/2026 20:01:49] "GET /image-uploader/img/Cat.png HTTP/1.1" 200 -
+[2026-07-09 20:01:49,884] INFO: 127.0.0.1 - - [09/Jul/2026 20:01:49] "GET /image-uploader/img/Griz.png HTTP/1.1" 200 -
+[2026-07-09 20:01:49,886] INFO: 127.0.0.1 - - [09/Jul/2026 20:01:49] "GET /image-uploader/js/index.js HTTP/1.1" 200 -
+[2026-07-09 20:01:49,893] INFO: 127.0.0.1 - - [09/Jul/2026 20:01:49] "GET /image-uploader/img/Zero.png HTTP/1.1" 200 -
+[2026-07-09 20:01:49,894] INFO: 127.0.0.1 - - [09/Jul/2026 20:01:49] "GET /image-uploader/img/Eric.png HTTP/1.1" 200 -
+[2026-07-09 20:01:50,493] INFO: 127.0.0.1 - - [09/Jul/2026 20:01:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-07-09 20:06:33,633] INFO: 127.0.0.1 - - [09/Jul/2026 20:06:33] "GET /form/upload.html HTTP/1.1" 200 -
+[2026-07-09 20:06:33,657] INFO: 127.0.0.1 - - [09/Jul/2026 20:06:33] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:06:33,658] INFO: 127.0.0.1 - - [09/Jul/2026 20:06:33] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:06:33,661] INFO: 127.0.0.1 - - [09/Jul/2026 20:06:33] "GET /image-uploader/img/icon/feather_upload-cloud.png HTTP/1.1" 200 -
+[2026-07-09 20:06:33,665] INFO: 127.0.0.1 - - [09/Jul/2026 20:06:33] "GET /image-uploader/js/upload.js HTTP/1.1" 200 -
+[2026-07-09 20:10:01,806] INFO: База данных и таблица images созданы / проверены
+[2026-07-09 20:10:02,650] INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.10:8000
+[2026-07-09 20:10:02,651] INFO: [33mPress CTRL+C to quit[0m
+[2026-07-09 20:10:12,188] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:12] "[36mGET / HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:12,209] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:12] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:12,210] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:12] "[36mGET /image-uploader/img/Cat.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:12,210] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:12] "[36mGET /image-uploader/img/Nord.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:12,211] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:12] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:12,213] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:12] "[36mGET /image-uploader/img/Griz.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:12,215] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:12] "[36mGET /image-uploader/js/index.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:12,217] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:12] "[36mGET /image-uploader/img/Zero.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:12,219] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:12] "[36mGET /image-uploader/img/Eric.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:20,573] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:20] "[36mGET /form/upload.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:20,595] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:20] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:20,595] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:20] "[36mGET /image-uploader/img/icon/feather_upload-cloud.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:20,596] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:20] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:20,596] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:20] "GET /image-uploader/js/upload.js HTTP/1.1" 200 -
+[2026-07-09 20:10:29,719] INFO: Успех: изображение 7adbe9a554764d75833f9a357e01c5bd.jpg загружено (ориг. image_pay.jpg)
+[2026-07-09 20:10:29,719] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:29] "POST /api/upload HTTP/1.1" 200 -
+[2026-07-09 20:10:53,009] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:53] "GET /form/images.html HTTP/1.1" 200 -
+[2026-07-09 20:10:53,033] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:53] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:53,033] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:53] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:53,034] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:53] "GET /image-uploader/js/images.js HTTP/1.1" 200 -
+[2026-07-09 20:10:53,061] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:53] "GET /api/images HTTP/1.1" 200 -
+[2026-07-09 20:10:57,663] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:57] "[36mGET /form/upload.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:57,689] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:57] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:57,691] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:57] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:57,692] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:57] "[36mGET /image-uploader/img/icon/feather_upload-cloud.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:10:57,693] INFO: 127.0.0.1 - - [09/Jul/2026 20:10:57] "[36mGET /image-uploader/js/upload.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:11:47,173] INFO: 127.0.0.1 - - [09/Jul/2026 20:11:47] "[36mGET /form/images.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:11:47,194] INFO: 127.0.0.1 - - [09/Jul/2026 20:11:47] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:11:47,194] INFO: 127.0.0.1 - - [09/Jul/2026 20:11:47] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:11:47,194] INFO: 127.0.0.1 - - [09/Jul/2026 20:11:47] "[36mGET /image-uploader/js/images.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:11:47,216] INFO: 127.0.0.1 - - [09/Jul/2026 20:11:47] "GET /api/images HTTP/1.1" 200 -
+[2026-07-09 20:11:51,023] INFO: 127.0.0.1 - - [09/Jul/2026 20:11:51] "[33mGET /images/7adbe9a554764d75833f9a357e01c5bd.jpg HTTP/1.1[0m" 404 -
+[2026-07-09 20:12:11,372] INFO: 127.0.0.1 - - [09/Jul/2026 20:12:11] "[33mGET /images/7adbe9a554764d75833f9a357e01c5bd.jpg HTTP/1.1[0m" 404 -
+[2026-07-09 20:12:30,777] INFO: Удалено изображение 7adbe9a554764d75833f9a357e01c5bd.jpg
+[2026-07-09 20:12:30,777] INFO: 127.0.0.1 - - [09/Jul/2026 20:12:30] "DELETE /api/delete/7adbe9a554764d75833f9a357e01c5bd.jpg HTTP/1.1" 200 -
+[2026-07-09 20:12:30,793] INFO: 127.0.0.1 - - [09/Jul/2026 20:12:30] "GET /api/images HTTP/1.1" 200 -
+[2026-07-09 20:12:47,109] INFO: 127.0.0.1 - - [09/Jul/2026 20:12:47] "[36mGET /form/upload.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:12:47,128] INFO: 127.0.0.1 - - [09/Jul/2026 20:12:47] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:12:47,129] INFO: 127.0.0.1 - - [09/Jul/2026 20:12:47] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:12:47,129] INFO: 127.0.0.1 - - [09/Jul/2026 20:12:47] "[36mGET /image-uploader/js/upload.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:12:47,129] INFO: 127.0.0.1 - - [09/Jul/2026 20:12:47] "[36mGET /image-uploader/img/icon/feather_upload-cloud.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:12:52,618] INFO: Успех: изображение 595dcf0e0aa14f4e9f6116e46f153302.jpg загружено (ориг. image.jpg)
+[2026-07-09 20:12:52,618] INFO: 127.0.0.1 - - [09/Jul/2026 20:12:52] "POST /api/upload HTTP/1.1" 200 -
+[2026-07-09 20:13:04,476] INFO: 127.0.0.1 - - [09/Jul/2026 20:13:04] "[36mGET /form/images.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:13:04,499] INFO: 127.0.0.1 - - [09/Jul/2026 20:13:04] "[36mGET /image-uploader/js/images.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:13:04,499] INFO: 127.0.0.1 - - [09/Jul/2026 20:13:04] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:13:04,499] INFO: 127.0.0.1 - - [09/Jul/2026 20:13:04] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:13:04,519] INFO: 127.0.0.1 - - [09/Jul/2026 20:13:04] "GET /api/images HTTP/1.1" 200 -
+[2026-07-09 20:13:09,029] INFO: 127.0.0.1 - - [09/Jul/2026 20:13:09] "[33mGET /images/595dcf0e0aa14f4e9f6116e46f153302.jpg HTTP/1.1[0m" 404 -
+[2026-07-09 20:17:07,661] INFO: База данных и таблица images созданы / проверены
+[2026-07-09 20:17:08,508] INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.10:8000
+[2026-07-09 20:17:08,509] INFO: [33mPress CTRL+C to quit[0m
+[2026-07-09 20:17:22,624] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:22] "GET / HTTP/1.1" 200 -
+[2026-07-09 20:17:22,648] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:22] "GET /image-uploader/css/reset.css HTTP/1.1" 200 -
+[2026-07-09 20:17:22,648] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:22] "GET /image-uploader/css/style.css HTTP/1.1" 200 -
+[2026-07-09 20:17:22,649] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:22] "GET /image-uploader/img/Cat.png HTTP/1.1" 200 -
+[2026-07-09 20:17:22,649] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:22] "GET /image-uploader/img/Nord.png HTTP/1.1" 200 -
+[2026-07-09 20:17:22,652] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:22] "GET /image-uploader/img/Griz.png HTTP/1.1" 200 -
+[2026-07-09 20:17:22,653] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:22] "GET /image-uploader/img/Zero.png HTTP/1.1" 200 -
+[2026-07-09 20:17:22,659] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:22] "GET /image-uploader/js/index.js HTTP/1.1" 200 -
+[2026-07-09 20:17:22,662] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:22] "GET /image-uploader/img/Eric.png HTTP/1.1" 200 -
+[2026-07-09 20:17:23,169] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-07-09 20:17:24,541] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:24] "GET /form/upload.html HTTP/1.1" 200 -
+[2026-07-09 20:17:24,565] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:24] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:17:24,567] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:24] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:17:24,567] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:24] "GET /image-uploader/img/icon/feather_upload-cloud.png HTTP/1.1" 200 -
+[2026-07-09 20:17:24,567] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:24] "GET /image-uploader/js/upload.js HTTP/1.1" 200 -
+[2026-07-09 20:17:31,655] INFO: Успех: изображение 2b628a1733ec4ae7998295f16570706c.png загружено (ориг. image.png)
+[2026-07-09 20:17:31,656] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:31] "POST /api/upload HTTP/1.1" 200 -
+[2026-07-09 20:17:37,245] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:37] "GET /form/images.html HTTP/1.1" 200 -
+[2026-07-09 20:17:37,269] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:37] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:17:37,270] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:37] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:17:37,271] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:37] "GET /image-uploader/js/images.js HTTP/1.1" 200 -
+[2026-07-09 20:17:37,297] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:37] "GET /api/images HTTP/1.1" 200 -
+[2026-07-09 20:17:42,934] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:42] "GET /images/2b628a1733ec4ae7998295f16570706c.png HTTP/1.1" 200 -
+[2026-07-09 20:17:47,901] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:47] "GET /images/595dcf0e0aa14f4e9f6116e46f153302.jpg HTTP/1.1" 200 -
+[2026-07-09 20:17:54,048] INFO: Удалено изображение 2b628a1733ec4ae7998295f16570706c.png
+[2026-07-09 20:17:54,048] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:54] "DELETE /api/delete/2b628a1733ec4ae7998295f16570706c.png HTTP/1.1" 200 -
+[2026-07-09 20:17:54,065] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:54] "GET /api/images HTTP/1.1" 200 -
+[2026-07-09 20:17:57,276] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:57] "[36mGET /form/upload.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:17:57,298] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:57] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:17:57,299] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:57] "[36mGET /image-uploader/js/upload.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:17:57,300] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:57] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:17:57,300] INFO: 192.168.1.10 - - [09/Jul/2026 20:17:57] "[36mGET /image-uploader/img/icon/feather_upload-cloud.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:18:06,915] INFO: 192.168.1.10 - - [09/Jul/2026 20:18:06] "[36mGET /form/images.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:18:06,936] INFO: 192.168.1.10 - - [09/Jul/2026 20:18:06] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:18:06,937] INFO: 192.168.1.10 - - [09/Jul/2026 20:18:06] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:18:06,937] INFO: 192.168.1.10 - - [09/Jul/2026 20:18:06] "[36mGET /image-uploader/js/images.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:18:06,960] INFO: 192.168.1.10 - - [09/Jul/2026 20:18:06] "GET /api/images HTTP/1.1" 200 -
+[2026-07-09 20:18:29,098] INFO: 192.168.1.10 - - [09/Jul/2026 20:18:29] "[36mGET /form/upload.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:18:29,120] INFO: 192.168.1.10 - - [09/Jul/2026 20:18:29] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:18:29,121] INFO: 192.168.1.10 - - [09/Jul/2026 20:18:29] "[36mGET /image-uploader/js/upload.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:18:29,121] INFO: 192.168.1.10 - - [09/Jul/2026 20:18:29] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:18:29,122] INFO: 192.168.1.10 - - [09/Jul/2026 20:18:29] "[36mGET /image-uploader/img/icon/feather_upload-cloud.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:19:02,174] INFO: 192.168.1.10 - - [09/Jul/2026 20:19:02] "[31m[1mPOST /api/upload HTTP/1.1[0m" 400 -
+[2026-07-09 20:19:56,851] INFO: Успех: изображение 762d2767796c4304933c8e268e316edb.jpg загружено (ориг. 1.jpg)
+[2026-07-09 20:19:56,851] INFO: 192.168.1.10 - - [09/Jul/2026 20:19:56] "POST /api/upload HTTP/1.1" 200 -
+[2026-07-09 20:20:42,965] INFO: 192.168.1.10 - - [09/Jul/2026 20:20:42] "[36mGET /form/images.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:20:42,986] INFO: 192.168.1.10 - - [09/Jul/2026 20:20:42] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:20:42,987] INFO: 192.168.1.10 - - [09/Jul/2026 20:20:42] "[36mGET /image-uploader/js/images.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:20:42,987] INFO: 192.168.1.10 - - [09/Jul/2026 20:20:42] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:20:43,012] INFO: 192.168.1.10 - - [09/Jul/2026 20:20:43] "GET /api/images HTTP/1.1" 200 -
+[2026-07-09 20:20:45,337] INFO: 192.168.1.10 - - [09/Jul/2026 20:20:45] "GET /images/762d2767796c4304933c8e268e316edb.jpg HTTP/1.1" 200 -
+[2026-07-09 20:21:28,956] INFO: 192.168.1.10 - - [09/Jul/2026 20:21:28] "[36mGET /form/upload.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:21:28,977] INFO: 192.168.1.10 - - [09/Jul/2026 20:21:28] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:21:28,978] INFO: 192.168.1.10 - - [09/Jul/2026 20:21:28] "[36mGET /image-uploader/img/icon/feather_upload-cloud.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:21:28,978] INFO: 192.168.1.10 - - [09/Jul/2026 20:21:28] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:21:28,978] INFO: 192.168.1.10 - - [09/Jul/2026 20:21:28] "[36mGET /image-uploader/js/upload.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:21:34,739] INFO: 192.168.1.10 - - [09/Jul/2026 20:21:34] "[31m[1mPOST /api/upload HTTP/1.1[0m" 400 -
+[2026-07-09 20:21:51,916] INFO: 192.168.1.10 - - [09/Jul/2026 20:21:51] "[31m[1mPOST /api/upload HTTP/1.1[0m" 400 -
+[2026-07-09 20:27:35,180] INFO: База данных и таблица images созданы / проверены
+[2026-07-09 20:27:36,029] INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.10:8000
+[2026-07-09 20:27:36,029] INFO: [33mPress CTRL+C to quit[0m
+[2026-07-09 20:27:47,601] INFO: Получен запрос на загрузку, файлов: 1
+[2026-07-09 20:27:47,601] INFO: Имя файла: лог яндекса.PNG, Content-Type: image/png
+[2026-07-09 20:27:47,601] INFO: 192.168.1.10 - - [09/Jul/2026 20:27:47] "[31m[1mPOST /api/upload HTTP/1.1[0m" 400 -
+[2026-07-09 20:30:31,751] INFO: База данных и таблица images созданы / проверены
+[2026-07-09 20:30:32,609] INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.10:8000
+[2026-07-09 20:30:32,609] INFO: [33mPress CTRL+C to quit[0m
+[2026-07-09 20:30:34,718] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:34] "[36mGET / HTTP/1.1[0m" 304 -
+[2026-07-09 20:30:34,804] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:34] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:30:34,804] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:34] "[36mGET /image-uploader/img/Cat.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:30:34,804] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:34] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:30:34,805] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:34] "[36mGET /image-uploader/img/Nord.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:30:34,806] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:34] "[36mGET /image-uploader/js/index.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:30:34,807] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:34] "[36mGET /image-uploader/img/Griz.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:30:34,813] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:34] "[36mGET /image-uploader/img/Zero.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:30:34,815] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:34] "[36mGET /image-uploader/img/Eric.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:30:36,549] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:36] "[36mGET /form/upload.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:30:36,569] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:36] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:30:36,570] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:36] "[36mGET /image-uploader/img/icon/feather_upload-cloud.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:30:36,570] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:36] "[36mGET /image-uploader/js/upload.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:30:36,570] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:36] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:30:42,396] INFO: Получен запрос на загрузку, файлов: 1
+[2026-07-09 20:30:42,396] INFO: Имя файла: лог яндекса.PNG, Content-Type: image/png
+[2026-07-09 20:30:42,396] INFO: Оригинальное имя (безопасное): PNG
+[2026-07-09 20:30:42,396] WARNING: Неподдерживаемый формат: PNG
+[2026-07-09 20:30:42,396] INFO: 192.168.1.10 - - [09/Jul/2026 20:30:42] "[31m[1mPOST /api/upload HTTP/1.1[0m" 400 -
+[2026-07-09 20:36:01,783] INFO: База данных и таблица images созданы / проверены
+[2026-07-09 20:36:02,635] INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.10:8000
+[2026-07-09 20:36:02,635] INFO: [33mPress CTRL+C to quit[0m
+[2026-07-09 20:36:09,753] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:09] "[36mGET /form/upload.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:36:09,775] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:09] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:36:09,775] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:09] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:36:09,776] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:09] "[36mGET /image-uploader/js/upload.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:36:09,776] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:09] "[36mGET /image-uploader/img/icon/feather_upload-cloud.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:36:19,548] INFO: Получен запрос на загрузку, файлов: 1
+[2026-07-09 20:36:19,548] INFO: Имя файла: лог яндекса.PNG, Content-Type: image/png
+[2026-07-09 20:36:19,548] INFO: Имя файла: лог яндекса.PNG, Content-Type: image/png
+[2026-07-09 20:36:19,548] INFO: Размер файла: 1225893 байт
+[2026-07-09 20:36:19,548] INFO: Начинаем проверку Pillow
+[2026-07-09 20:36:19,555] INFO: Pillow определил формат: png
+[2026-07-09 20:36:19,566] INFO: Успех: изображение a232fc420eab497a9b1c4fc62c7f7475.PNG загружено (ориг. лог яндекса.PNG)
+[2026-07-09 20:36:19,567] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:19] "POST /api/upload HTTP/1.1" 200 -
+[2026-07-09 20:36:26,013] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:26] "[36mGET /form/images.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:36:26,035] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:26] "[36mGET /image-uploader/js/images.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:36:26,035] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:26] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:36:26,035] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:26] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:36:26,057] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:26] "GET /api/images HTTP/1.1" 200 -
+[2026-07-09 20:36:31,390] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:31] "GET /images/a232fc420eab497a9b1c4fc62c7f7475.PNG HTTP/1.1" 200 -
+[2026-07-09 20:36:54,827] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:54] "[36mGET /form/upload.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:36:54,847] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:54] "[36mGET /image-uploader/js/upload.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:36:54,847] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:54] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:36:54,848] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:54] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:36:54,848] INFO: 192.168.1.10 - - [09/Jul/2026 20:36:54] "[36mGET /image-uploader/img/icon/feather_upload-cloud.png HTTP/1.1[0m" 304 -
+[2026-07-09 20:37:17,458] INFO: Получен запрос на загрузку, файлов: 1
+[2026-07-09 20:37:17,459] INFO: Имя файла: Новый текстовый документ.html, Content-Type: text/html
+[2026-07-09 20:37:17,459] INFO: Имя файла: Новый текстовый документ.html, Content-Type: text/html
+[2026-07-09 20:37:17,459] WARNING: Неподдерживаемый формат: .html
+[2026-07-09 20:37:17,459] INFO: 192.168.1.10 - - [09/Jul/2026 20:37:17] "[31m[1mPOST /api/upload HTTP/1.1[0m" 400 -
+[2026-07-09 20:37:59,765] INFO: 192.168.1.10 - - [09/Jul/2026 20:37:59] "[36mGET /form/images.html HTTP/1.1[0m" 304 -
+[2026-07-09 20:37:59,787] INFO: 192.168.1.10 - - [09/Jul/2026 20:37:59] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:37:59,788] INFO: 192.168.1.10 - - [09/Jul/2026 20:37:59] "[36mGET /image-uploader/js/images.js HTTP/1.1[0m" 304 -
+[2026-07-09 20:37:59,788] INFO: 192.168.1.10 - - [09/Jul/2026 20:37:59] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 20:37:59,807] INFO: 192.168.1.10 - - [09/Jul/2026 20:37:59] "GET /api/images HTTP/1.1" 200 -
+[2026-07-09 21:12:39,101] INFO: База данных и таблица images созданы / проверены
+[2026-07-09 21:12:39,962] INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.10:8000
+[2026-07-09 21:12:39,962] INFO: [33mPress CTRL+C to quit[0m
+[2026-07-09 21:13:09,281] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:09] "[36mGET /form/images.html HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:09,301] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:09] "[36mGET /image-uploader/js/images.js HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:09,302] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:09] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:09,302] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:09] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:09,322] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:09] "GET /api/images HTTP/1.1" 200 -
+[2026-07-09 21:13:11,925] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:11] "[36mGET /images/a232fc420eab497a9b1c4fc62c7f7475.PNG HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:15,869] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:15] "[36mGET /images/762d2767796c4304933c8e268e316edb.jpg HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:19,083] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:19] "[36mGET /form/upload.html HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:19,104] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:19] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:19,104] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:19] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:19,105] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:19] "[36mGET /image-uploader/js/upload.js HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:19,105] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:19] "[36mGET /image-uploader/img/icon/feather_upload-cloud.png HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:33,549] INFO: Получен запрос на загрузку, файлов: 1
+[2026-07-09 21:13:33,549] INFO: Имя файла: Снимок.PNG, Content-Type: image/png
+[2026-07-09 21:13:33,549] INFO: Имя файла: Снимок.PNG, Content-Type: image/png
+[2026-07-09 21:13:33,549] INFO: Размер файла: 181552 байт
+[2026-07-09 21:13:33,549] INFO: Начинаем проверку Pillow
+[2026-07-09 21:13:33,556] INFO: Pillow определил формат: png
+[2026-07-09 21:13:33,567] INFO: Успех: изображение 98c1b9718af64f828847c91176d904d8.PNG загружено (ориг. Снимок.PNG)
+[2026-07-09 21:13:33,567] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:33] "POST /api/upload HTTP/1.1" 200 -
+[2026-07-09 21:13:37,412] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:37] "[36mGET /form/images.html HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:37,435] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:37] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:37,436] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:37] "[36mGET /image-uploader/js/images.js HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:37,437] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:37] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 21:13:37,457] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:37] "GET /api/images HTTP/1.1" 200 -
+[2026-07-09 21:13:41,655] INFO: 192.168.1.10 - - [09/Jul/2026 21:13:41] "GET /images/98c1b9718af64f828847c91176d904d8.PNG HTTP/1.1" 200 -
