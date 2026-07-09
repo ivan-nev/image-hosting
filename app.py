@@ -1,5 +1,6 @@
 import os
 import logging
+from logging.handlers import RotatingFileHandler
 from io import BytesIO
 from flask import Flask, request, abort, jsonify, send_from_directory, send_file
 from PIL import Image, ImageOps
@@ -12,14 +13,21 @@ app.secret_key = os.environ.get("SECRET_KEY", "dev-secret-key")
 
 # Настройка логирования
 log_file = os.path.join(LOG_DIR, "app.log")
-logging.basicConfig(
-    level=logging.INFO,
-    format="[%(asctime)s] %(levelname)s: %(message)s",
-    handlers=[
-        logging.FileHandler(log_file),
-        logging.StreamHandler()
-    ]
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter("[%(asctime)s] %(levelname)s: %(message)s")
+
+# Ротация по размеру
+file_handler = RotatingFileHandler(
+    log_file, maxBytes=1*1024*1024, backupCount=5, encoding='utf-8'
 )
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
+
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(formatter)
+logger.addHandler(console_handler)
 
 
 
@@ -159,7 +167,14 @@ def thumbnail(filename):
     # Открываем изображение
     img = Image.open(filepath)
 
-    img = ImageOps.fit(img, (width, height), Image.LANCZOS, centering=(0.5, 0.5))
+    # Сохраняем пропорции и обрезаем до квадрата (центрированно)
+    # Если хотите просто ресайз с сохранением пропорций без обрезки, используйте thumbnail
+    # но для списка лучше квадратная миниатюра
+    img.thumbnail((width, height), Image.LANCZOS)
+
+    # Если нужно строго квадратное изображение, можно сделать обрезку:
+    # from PIL import ImageOps
+    # img = ImageOps.fit(img, (width, height), Image.LANCZOS, centering=(0.5, 0.5))))
 
     # Определяем формат
     fmt = img.format if img.format else 'JPEG'
