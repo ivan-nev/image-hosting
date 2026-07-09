@@ -436,3 +436,74 @@
 [2026-07-09 22:00:26,621] INFO: 192.168.1.10 - - [09/Jul/2026 22:00:26] "GET /image-uploader/css/style.css HTTP/1.1" 200 -
 [2026-07-09 22:00:26,622] INFO: 192.168.1.10 - - [09/Jul/2026 22:00:26] "GET /image-uploader/js/images.js HTTP/1.1" 200 -
 [2026-07-09 22:00:26,665] INFO: 192.168.1.10 - - [09/Jul/2026 22:00:26] "GET /api/images?page=1 HTTP/1.1" 200 -
+[2026-07-09 22:01:54,011] INFO: База данных и таблица images созданы / проверены
+[2026-07-09 22:01:54,870] INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.10:8000
+[2026-07-09 22:01:54,870] INFO: [33mPress CTRL+C to quit[0m
+[2026-07-09 22:02:02,673] INFO: 192.168.1.10 - - [09/Jul/2026 22:02:02] "[36mGET /form/images.html HTTP/1.1[0m" 304 -
+[2026-07-09 22:02:02,695] INFO: 192.168.1.10 - - [09/Jul/2026 22:02:02] "[36mGET /image-uploader/js/images.js HTTP/1.1[0m" 304 -
+[2026-07-09 22:02:02,695] INFO: 192.168.1.10 - - [09/Jul/2026 22:02:02] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 22:02:02,697] INFO: 192.168.1.10 - - [09/Jul/2026 22:02:02] "GET /image-uploader/css/style.css HTTP/1.1" 200 -
+[2026-07-09 22:02:02,728] INFO: 192.168.1.10 - - [09/Jul/2026 22:02:02] "GET /api/images?page=1 HTTP/1.1" 200 -
+[2026-07-09 22:02:11,516] INFO: 192.168.1.10 - - [09/Jul/2026 22:02:11] "GET /api/images?page=2 HTTP/1.1" 200 -
+[2026-07-09 22:02:14,680] INFO: 192.168.1.10 - - [09/Jul/2026 22:02:14] "GET /api/images?page=1 HTTP/1.1" 200 -
+[2026-07-09 22:02:36,383] INFO: Удалено изображение cc6d1df55da444bab363f884bdf3b4b2.jpg
+[2026-07-09 22:02:36,383] INFO: 192.168.1.10 - - [09/Jul/2026 22:02:36] "DELETE /api/delete/cc6d1df55da444bab363f884bdf3b4b2.jpg HTTP/1.1" 200 -
+[2026-07-09 22:02:36,408] INFO: 192.168.1.10 - - [09/Jul/2026 22:02:36] "GET /api/images?page=1 HTTP/1.1" 200 -
+[2026-07-09 22:13:44,790] INFO: База данных и таблица images созданы / проверены
+[2026-07-09 22:13:45,648] INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.10:8000
+[2026-07-09 22:13:45,648] INFO: [33mPress CTRL+C to quit[0m
+[2026-07-09 22:13:56,048] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:56] "[36mGET / HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:56,070] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:56] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:56,070] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:56] "[36mGET /image-uploader/img/Cat.png HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:56,071] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:56] "GET /image-uploader/css/style.css HTTP/1.1" 200 -
+[2026-07-09 22:13:56,072] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:56] "[36mGET /image-uploader/img/Nord.png HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:56,074] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:56] "[36mGET /image-uploader/img/Griz.png HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:56,077] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:56] "[36mGET /image-uploader/js/index.js HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:56,082] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:56] "[36mGET /image-uploader/img/Zero.png HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:56,084] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:56] "[36mGET /image-uploader/img/Eric.png HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:58,053] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:58] "[36mGET /form/upload.html HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:58,074] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:58] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:58,076] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:58] "[36mGET /image-uploader/js/upload.js HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:58,076] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:58] "[36mGET /image-uploader/img/icon/feather_upload-cloud.png HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:58,076] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:58] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:59,716] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "[36mGET /form/images.html HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:59,737] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:59,737] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 22:13:59,738] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "GET /image-uploader/js/images.js HTTP/1.1" 200 -
+[2026-07-09 22:13:59,796] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "GET /api/images?page=1 HTTP/1.1" 200 -
+[2026-07-09 22:13:59,821] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "GET /thumbnail/c77839dd273b40ff99072536327bf272.jpg?w=40&h=40 HTTP/1.1" 200 -
+[2026-07-09 22:13:59,822] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "GET /thumbnail/774c5c2d56de40c584b426b5f83f7e58.jpg?w=40&h=40 HTTP/1.1" 200 -
+[2026-07-09 22:13:59,823] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "GET /thumbnail/2b8299df9ce04c31ab74e05e3b843e7f.jpg?w=40&h=40 HTTP/1.1" 200 -
+[2026-07-09 22:13:59,829] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "GET /thumbnail/2e2cb631077440369678191f81058294.png?w=40&h=40 HTTP/1.1" 200 -
+[2026-07-09 22:13:59,830] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "GET /thumbnail/09af03e0b935456bac848f35aba2f6f3.jpg?w=40&h=40 HTTP/1.1" 200 -
+[2026-07-09 22:13:59,832] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "GET /thumbnail/85f0980a9a8243a39064811b24d1fa2d.jpg?w=40&h=40 HTTP/1.1" 200 -
+[2026-07-09 22:13:59,836] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "GET /thumbnail/595dcf0e0aa14f4e9f6116e46f153302.jpg?w=40&h=40 HTTP/1.1" 200 -
+[2026-07-09 22:13:59,845] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "GET /thumbnail/44b348ae580b4b51abdaaf7cd5afdce4.png?w=40&h=40 HTTP/1.1" 200 -
+[2026-07-09 22:13:59,860] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "GET /thumbnail/9f08022f77794b5781f8d73420cec434.PNG?w=40&h=40 HTTP/1.1" 200 -
+[2026-07-09 22:13:59,866] INFO: 127.0.0.1 - - [09/Jul/2026 22:13:59] "GET /thumbnail/98c1b9718af64f828847c91176d904d8.PNG?w=40&h=40 HTTP/1.1" 200 -
+[2026-07-09 22:14:39,525] INFO: 127.0.0.1 - - [09/Jul/2026 22:14:39] "[36mGET /form/upload.html HTTP/1.1[0m" 304 -
+[2026-07-09 22:14:39,545] INFO: 127.0.0.1 - - [09/Jul/2026 22:14:39] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 22:14:39,547] INFO: 127.0.0.1 - - [09/Jul/2026 22:14:39] "[36mGET /image-uploader/js/upload.js HTTP/1.1[0m" 304 -
+[2026-07-09 22:14:39,547] INFO: 127.0.0.1 - - [09/Jul/2026 22:14:39] "[36mGET /image-uploader/img/icon/feather_upload-cloud.png HTTP/1.1[0m" 304 -
+[2026-07-09 22:14:39,548] INFO: 127.0.0.1 - - [09/Jul/2026 22:14:39] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 22:14:46,230] INFO: Получен запрос на загрузку, файлов: 1
+[2026-07-09 22:14:46,230] INFO: Имя файла: Снимок.PNG, Content-Type: image/png
+[2026-07-09 22:14:46,230] INFO: Имя файла: Снимок.PNG, Content-Type: image/png
+[2026-07-09 22:14:46,230] INFO: Размер файла: 181552 байт
+[2026-07-09 22:14:46,230] INFO: Начинаем проверку Pillow
+[2026-07-09 22:14:46,230] INFO: Pillow определил формат: png
+[2026-07-09 22:14:46,241] INFO: Успех: изображение 75922008458541cf80cc36d32577641c.PNG загружено (ориг. Снимок.PNG)
+[2026-07-09 22:14:46,241] INFO: 127.0.0.1 - - [09/Jul/2026 22:14:46] "POST /api/upload HTTP/1.1" 200 -
+[2026-07-09 22:14:50,101] INFO: 127.0.0.1 - - [09/Jul/2026 22:14:50] "[36mGET /form/images.html HTTP/1.1[0m" 304 -
+[2026-07-09 22:14:50,124] INFO: 127.0.0.1 - - [09/Jul/2026 22:14:50] "[36mGET /image-uploader/css/reset.css HTTP/1.1[0m" 304 -
+[2026-07-09 22:14:50,124] INFO: 127.0.0.1 - - [09/Jul/2026 22:14:50] "[36mGET /image-uploader/js/images.js HTTP/1.1[0m" 304 -
+[2026-07-09 22:14:50,124] INFO: 127.0.0.1 - - [09/Jul/2026 22:14:50] "[36mGET /image-uploader/css/style.css HTTP/1.1[0m" 304 -
+[2026-07-09 22:14:50,156] INFO: 127.0.0.1 - - [09/Jul/2026 22:14:50] "GET /api/images?page=1 HTTP/1.1" 200 -
+[2026-07-09 22:14:50,197] INFO: 127.0.0.1 - - [09/Jul/2026 22:14:50] "GET /thumbnail/75922008458541cf80cc36d32577641c.PNG?w=40&h=40 HTTP/1.1" 200 -
+[2026-07-09 22:14:52,288] INFO: 127.0.0.1 - - [09/Jul/2026 22:14:52] "GET /api/images?page=2 HTTP/1.1" 200 -

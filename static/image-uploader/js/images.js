@@ -81,7 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const fullUrl = window.location.origin + '/images/' + imgData.filename;
             fileItem.innerHTML = `
                 <span class="file-col file-col-name">
-                    <span class="file-icon">🖼️</span>
+                    <img src="/thumbnail/${imgData.filename}?w=40&h=40" 
+                         alt="${imgData.original_name}" 
+                         style="width:40px; height:40px; object-fit:cover; border-radius:4px; margin-right:10px;"
+                         onerror="this.style.display='none';">
                     <span class="file-name">${imgData.original_name}</span>
                 </span>
                 <span class="file-col file-col-size">${sizeStr}</span>

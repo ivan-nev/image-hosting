@@ -1,7 +1,8 @@
 import os
 import logging
-from flask import Flask, request, abort, jsonify, send_from_directory
-from PIL import Image
+from io import BytesIO
+from flask import Flask, request, abort, jsonify, send_from_directory, send_file
+from PIL import Image, ImageOps
 from db import (init_db, save_metadata, get_all_images, delete_image_by_filename, generate_unique_filename,
                 get_images_page, get_total_images_count, get_total_images)
 from config import LOG_DIR, UPLOAD_DIR, ALLOWED_EXTENSIONS, MAX_FILE_SIZE, PAGE_SIZE
@@ -139,6 +140,37 @@ def serve_image(filename):
     if not os.path.exists(safe_path):
         abort(404)
     return send_from_directory(UPLOAD_DIR, filename)
+
+
+@app.route("/thumbnail/<filename>")
+def thumbnail(filename):
+    # Проверяем, существует ли файл
+    filepath = os.path.join(UPLOAD_DIR, filename)
+    if not os.path.exists(filepath):
+        abort(404)
+
+    # Параметры размера (по умолчанию 50x50)
+    try:
+        width = request.args.get('w', 50, type=int)
+        height = request.args.get('h', 50, type=int)
+    except ValueError:
+        width = height = 50
+
+    # Открываем изображение
+    img = Image.open(filepath)
+
+    img = ImageOps.fit(img, (width, height), Image.LANCZOS, centering=(0.5, 0.5))
+
+    # Определяем формат
+    fmt = img.format if img.format else 'JPEG'
+    # Сохраняем в байтовый поток
+    output = BytesIO()
+    img.save(output, format=fmt, quality=85)
+    output.seek(0)
+
+    # Отправляем с правильным типом
+    return send_file(output, mimetype=f'image/{fmt.lower()}',
+                     max_age=3600)
 
 
 # ------------------ Запуск ------------------
