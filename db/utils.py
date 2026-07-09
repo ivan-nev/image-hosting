@@ -2,13 +2,8 @@ import os
 import uuid
 import psycopg2
 import logging
+from config import UPLOAD_DIR, ALLOWED_EXTENSIONS, PAGE_SIZE
 
-from werkzeug.http import parse_if_range_header
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-print(BASE_DIR)
-ALLOWED_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif"}
-LOG_DIR = os.path.join(BASE_DIR, "logs")
 
 # ------------------ Подключение к БД ------------------
 def get_db_connection():
@@ -98,3 +93,48 @@ def delete_image_by_filename(filename):
         if os.path.exists(filepath):
             os.remove(filepath)
     return deleted
+
+
+
+def get_total_images_count():
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute("SELECT COUNT(*) FROM images")
+    count = cur.fetchone()[0]
+    cur.close()
+    conn.close()
+    return count
+
+# Вместо get_all_images используем get_images_page
+def get_images_page(page):
+    offset = (page - 1) * PAGE_SIZE
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute(
+        "SELECT id, filename, original_name, size, upload_time, file_type "
+        "FROM images ORDER BY upload_time DESC LIMIT %s OFFSET %s",
+        (PAGE_SIZE, offset)
+    )
+    rows = cur.fetchall()
+    cur.close()
+    conn.close()
+    result = []
+    for row in rows:
+        result.append({
+            "id": row[0],
+            "filename": row[1],
+            "original_name": row[2],
+            "size": row[3],
+            "upload_time": row[4].strftime("%Y-%m-%d %H:%M:%S"),
+            "file_type": row[5]
+        })
+    return result
+
+def get_total_images():
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute("SELECT COUNT(*) FROM images")
+    total = cur.fetchone()[0]
+    cur.close()
+    conn.close()
+    return total

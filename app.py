@@ -1,25 +1,10 @@
 import os
-import uuid
 import logging
-from datetime import datetime
-from flask import Flask, request, render_template, redirect, url_for, flash, abort, jsonify, send_from_directory
-import psycopg2
-from werkzeug.utils import secure_filename
+from flask import Flask, request, abort, jsonify, send_from_directory
 from PIL import Image
-from db import init_db, save_metadata, get_all_images, delete_image_by_filename, generate_unique_filename
-
-# ------------------ Конфигурация ------------------
-# Используем относительные пути (папки в корне проекта)
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-UPLOAD_DIR = os.path.join(BASE_DIR, "images")
-LOG_DIR = os.path.join(BASE_DIR, "logs")
-MAX_FILE_SIZE = 5 * 1024 * 1024  # 5 MB
-ALLOWED_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif"}
-PAGE_SIZE = 10
-
-# Создаём папки, если их нет
-os.makedirs(UPLOAD_DIR, exist_ok=True)
-os.makedirs(LOG_DIR, exist_ok=True)
+from db import (init_db, save_metadata, get_all_images, delete_image_by_filename, generate_unique_filename,
+                get_images_page, get_total_images_count, get_total_images)
+from config import LOG_DIR, UPLOAD_DIR, ALLOWED_EXTENSIONS, MAX_FILE_SIZE, PAGE_SIZE
 
 app = Flask(__name__, static_folder='static')
 app.secret_key = os.environ.get("SECRET_KEY", "dev-secret-key")
@@ -98,8 +83,6 @@ def api_upload():
         app.logger.error(f"Ошибка валидации изображения: {str(e)}")
         return jsonify({"error": f"Файл не является корректным изображением: {str(e)}"}), 400
 
-    # ... остальной код
-
     # Генерация уникального имени и сохранение
     unique_name = generate_unique_filename(original_name)
     save_path = os.path.join(UPLOAD_DIR, unique_name)
@@ -127,8 +110,17 @@ def api_upload():
 # API для получения списка файлов (используется images.js)
 @app.route("/api/images", methods=["GET"])
 def api_images():
-    images = get_all_images()
-    return jsonify(images), 200
+    page = request.args.get("page", 1, type=int)
+    if page < 1:
+        page = 1
+    items = get_images_page(page)
+    total = get_total_images()
+    return jsonify({
+        "items": items,
+        "total": total,
+        "page": page,
+        "page_size": PAGE_SIZE
+    }), 200
 
 
 # API для удаления файла (используется images.js)
