@@ -166,24 +166,13 @@ def thumbnail(filename):
 
     # Открываем изображение
     img = Image.open(filepath)
-
-    # Сохраняем пропорции и обрезаем до квадрата (центрированно)
-    # Если хотите просто ресайз с сохранением пропорций без обрезки, используйте thumbnail
-    # но для списка лучше квадратная миниатюра
     img.thumbnail((width, height), Image.LANCZOS)
-
-    # Если нужно строго квадратное изображение, можно сделать обрезку:
-    # from PIL import ImageOps
-    # img = ImageOps.fit(img, (width, height), Image.LANCZOS, centering=(0.5, 0.5))))
 
     # Определяем формат
     fmt = img.format if img.format else 'JPEG'
-    # Сохраняем в байтовый поток
     output = BytesIO()
     img.save(output, format=fmt, quality=85)
     output.seek(0)
-
-    # Отправляем с правильным типом
     return send_file(output, mimetype=f'image/{fmt.lower()}',
                      max_age=3600)
 
