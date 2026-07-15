@@ -61,7 +61,7 @@ services:
           echo '=== Starting backup cycle ===' &&
           sh /script/backup.sh 2>&1 || echo 'Backup script exited with error' &&
           echo 'Sleeping for 24h...' &&
-          sleep 24*60*60
+          sleep 86400
         done
       "
     restart: unless-stopped
