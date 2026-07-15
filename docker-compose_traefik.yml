@@ -9,12 +9,20 @@ services:
     restart: unless-stopped
     networks:
       - proxy-network
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
 
   app:
     build: .
+    command: gunicorn --bind 0.0.0.0:8000 app:app
     container_name: app_image
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     env_file:
       - .env
     volumes:
@@ -36,10 +44,37 @@ services:
       - "traefik.http.services.app.loadbalancer.server.port=8000"
 
 
+  backup:
+    image: postgres:15-alpine
+    container_name: backup_image
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - .env
+    volumes:
+      - backup_data:/backups
+      - ./backup.sh:/script/backup.sh:ro
+    command: >
+      sh -c "
+        while true; do
+          echo '=== Starting backup cycle ===' &&
+          sh /script/backup.sh 2>&1 || echo 'Backup script exited with error' &&
+          echo 'Sleeping for 24h...' &&
+          sleep 24*60*60
+        done
+      "
+    restart: unless-stopped
+
 volumes:
   db_data:
+    name: db_data
   images_data:
+    name: images_data
   logs_data:
+    name: logs_data
+  backup_data:
+    name: backup_data
 
 networks:
   proxy-network:

@@ -29,7 +29,7 @@ console_handler = logging.StreamHandler()
 console_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 
-
+init_db()
 
 # ------------------ Маршруты ------------------
 @app.route("/")
@@ -179,5 +179,4 @@ def thumbnail(filename):
 
 # ------------------ Запуск ------------------
 if __name__ == "__main__":
-    init_db()
     app.run(host="0.0.0.0", port=8000, debug=False)
