@@ -1,6 +1,7 @@
 services:
   db:
     image: postgres:15
+    container_name: db_image
     env_file:
       - .env
     volumes:
@@ -11,6 +12,7 @@ services:
 
   app:
     build: .
+    container_name: app_image
     depends_on:
       - db
     env_file:
