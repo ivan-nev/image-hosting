@@ -26,8 +26,8 @@ services:
     env_file:
       - .env
     volumes:
-      - images_data:/images
-      - logs_data:/logs
+      - images_data:/app/images
+      - logs_data:/app/logs
     restart: unless-stopped
     networks:
       - proxy-network
