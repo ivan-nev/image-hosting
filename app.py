@@ -3,9 +3,9 @@ import logging
 from logging.handlers import RotatingFileHandler
 from io import BytesIO
 from flask import Flask, request, abort, jsonify, send_from_directory, send_file
-from PIL import Image, ImageOps
-from db import (init_db, save_metadata, get_all_images, delete_image_by_filename, generate_unique_filename,
-                get_images_page, get_total_images_count, get_total_images)
+from PIL import Image
+from db import (init_db, save_metadata, delete_image_by_filename, generate_unique_filename,
+                get_images_page, get_total_images)
 from config import LOG_DIR, UPLOAD_DIR, ALLOWED_EXTENSIONS, MAX_FILE_SIZE, PAGE_SIZE
 
 app = Flask(__name__, static_folder='static')

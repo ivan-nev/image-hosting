@@ -18,21 +18,18 @@ def get_db_connection():
 
 # Инициализация таблицы
 def init_db():
-    conn = get_db_connection()
-    cur = conn.cursor()
-    cur.execute("""
-        CREATE TABLE IF NOT EXISTS images (
-            id SERIAL PRIMARY KEY,
-            filename TEXT NOT NULL,
-            original_name TEXT NOT NULL,
-            size INTEGER NOT NULL,
-            upload_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            file_type TEXT NOT NULL
-        );
-    """)
-    conn.commit()
-    cur.close()
-    conn.close()
+    with get_db_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute("""
+                CREATE TABLE IF NOT EXISTS images (
+                    id SERIAL PRIMARY KEY,
+                    filename TEXT NOT NULL,
+                    original_name TEXT NOT NULL,
+                    size INTEGER NOT NULL,
+                    upload_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    file_type TEXT NOT NULL
+                );
+            """)
     logging.info("База данных и таблица images созданы / проверены")
 
 
@@ -48,25 +45,21 @@ def generate_unique_filename(original_name):
 
 
 def save_metadata(filename, original_name, size, file_type):
-    conn = get_db_connection()
-    cur = conn.cursor()
-    cur.execute(
-        "INSERT INTO images (filename, original_name, size, file_type) VALUES (%s, %s, %s, %s)",
-        (filename, original_name, size, file_type)
-    )
-    conn.commit()
-    cur.close()
-    conn.close()
+    with get_db_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                "INSERT INTO images (filename, original_name, size, file_type) VALUES (%s, %s, %s, %s)",
+                (filename, original_name, size, file_type)
+            )
 
 
 def get_all_images():
-    conn = get_db_connection()
-    cur = conn.cursor()
-    cur.execute(
-        "SELECT id, filename, original_name, size, upload_time, file_type FROM images ORDER BY upload_time DESC")
-    rows = cur.fetchall()
-    cur.close()
-    conn.close()
+    with get_db_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                "SELECT id, filename, original_name, size, upload_time, file_type FROM images ORDER BY upload_time DESC"
+            )
+            rows = cur.fetchall()
     result = []
     for row in rows:
         result.append({
@@ -81,13 +74,10 @@ def get_all_images():
 
 
 def delete_image_by_filename(filename):
-    conn = get_db_connection()
-    cur = conn.cursor()
-    cur.execute("DELETE FROM images WHERE filename = %s", (filename,))
-    deleted = cur.rowcount > 0
-    conn.commit()
-    cur.close()
-    conn.close()
+    with get_db_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute("DELETE FROM images WHERE filename = %s", (filename,))
+            deleted = cur.rowcount > 0
     if deleted:
         filepath = os.path.join(UPLOAD_DIR, filename)
         if os.path.exists(filepath):
@@ -95,29 +85,24 @@ def delete_image_by_filename(filename):
     return deleted
 
 
-
 def get_total_images_count():
-    conn = get_db_connection()
-    cur = conn.cursor()
-    cur.execute("SELECT COUNT(*) FROM images")
-    count = cur.fetchone()[0]
-    cur.close()
-    conn.close()
+    with get_db_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute("SELECT COUNT(*) FROM images")
+            count = cur.fetchone()[0]
     return count
 
-# Вместо get_all_images используем get_images_page
+
 def get_images_page(page):
     offset = (page - 1) * PAGE_SIZE
-    conn = get_db_connection()
-    cur = conn.cursor()
-    cur.execute(
-        "SELECT id, filename, original_name, size, upload_time, file_type "
-        "FROM images ORDER BY upload_time DESC LIMIT %s OFFSET %s",
-        (PAGE_SIZE, offset)
-    )
-    rows = cur.fetchall()
-    cur.close()
-    conn.close()
+    with get_db_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                "SELECT id, filename, original_name, size, upload_time, file_type "
+                "FROM images ORDER BY upload_time DESC LIMIT %s OFFSET %s",
+                (PAGE_SIZE, offset)
+            )
+            rows = cur.fetchall()
     result = []
     for row in rows:
         result.append({
@@ -130,11 +115,10 @@ def get_images_page(page):
         })
     return result
 
+
 def get_total_images():
-    conn = get_db_connection()
-    cur = conn.cursor()
-    cur.execute("SELECT COUNT(*) FROM images")
-    total = cur.fetchone()[0]
-    cur.close()
-    conn.close()
+    with get_db_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute("SELECT COUNT(*) FROM images")
+            total = cur.fetchone()[0]
     return total
